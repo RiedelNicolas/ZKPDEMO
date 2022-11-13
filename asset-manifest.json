@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ZKPDEMO/static/css/main.55014a3f.css",
-    "main.js": "/ZKPDEMO/static/js/main.8854c869.js",
+    "main.js": "/ZKPDEMO/static/js/main.4d07296e.js",
     "static/js/787.0438f4c8.chunk.js": "/ZKPDEMO/static/js/787.0438f4c8.chunk.js",
     "index.html": "/ZKPDEMO/index.html",
     "main.55014a3f.css.map": "/ZKPDEMO/static/css/main.55014a3f.css.map",
-    "main.8854c869.js.map": "/ZKPDEMO/static/js/main.8854c869.js.map",
+    "main.4d07296e.js.map": "/ZKPDEMO/static/js/main.4d07296e.js.map",
     "787.0438f4c8.chunk.js.map": "/ZKPDEMO/static/js/787.0438f4c8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55014a3f.css",
-    "static/js/main.8854c869.js"
+    "static/js/main.4d07296e.js"
   ]
 }
