@@ -6,7 +6,7 @@ import "./style.scss"
 export const NotFound = () => {
   const [location, setLocation] = useLocation();
   const goHome = () => {
-    setLocation("/");
+    setLocation("/ZKPDEMO");
   }
   
   return (
@@ -18,9 +18,13 @@ export const NotFound = () => {
             <Card.Title>404 Not Found!</Card.Title>
           </Card.Header>
           <Card.Body>
-            <Button variant="primary" onClick={goHome}>
-                Ir a home
-            </Button>
+            <Row className='d-flex justify-content-center'>
+                <Col xs="auto">
+                  <Button variant="primary" onClick={goHome}>
+                    Ir a home
+                  </Button>
+                </Col>
+              </Row>
           </Card.Body>
         </Card>
       </Col>

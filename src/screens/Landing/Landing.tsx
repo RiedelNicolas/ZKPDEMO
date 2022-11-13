@@ -1,15 +1,20 @@
 import React from 'react'
 import { Button, Card, Col, Container, ListGroup, Row } from 'react-bootstrap'
+import { useLocation } from "wouter";
 import "./style.scss"
 
 export const Landing = () => {
+  const [location, setLocation] = useLocation();
+  const goSelectGame = () => {
+    setLocation("/ZKPDEMO/SelectGame");
+  }
   return (
     <Container id='LandingContainer'>
       <Row className='d-flex justify-content-center'>
-        <Col xs="10">
+        <Col md="8" xs="10">
           <Card>
             <Card.Header>
-              <Card.Title>Ejemplo practico de ZKP</Card.Title>
+              <Card.Title>Ejemplo práctico de ZKP</Card.Title>
             </Card.Header>
             <Card.Body>
 
@@ -20,11 +25,15 @@ export const Landing = () => {
               <Card.Text>
               Fue desarrollado como complemento al trabajo práctico de la materia Criptografía y Seguridad Informática, Facultad de Ingeniería, Universidad de Buenos Aires.
               </Card.Text>
-              <Button variant="primary" href="/demo">Empezar</Button>
+              <Row className='d-flex justify-content-center'>
+                <Col xs="auto">
+                  <Button variant="primary" onClick={goSelectGame}>Empezar</Button>
+                </Col>
+              </Row>
             </Card.Body>
             <Card.Footer>
               <Card.Text>
-                Grupo conformado por : Agustín Cambiano, Iván Soriano, Ezequiel Zbogar, Marcos Daniel Rolando y Nicolás Agustín Riedel.
+                Grupo compuesto por : Agustín Cambiano, Iván Soriano, Ezequiel Zbogar, Marcos Daniel Rolando y Nicolás Agustín Riedel.
               </Card.Text>
             </Card.Footer>
           </Card>
