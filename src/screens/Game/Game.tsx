@@ -17,7 +17,7 @@ const renderInfo = (aciertos:number) => {
     }else if (aciertos > 0) {
         return (
            <p>
-                {`Hasta el momento se puede decir con un`} <b>{` ${(1-Math.pow(1/2,aciertos))*100}% de seguridad `}</b>{`que usted puede diferenciar las imagenes`}
+                {`Hasta el momento se puede decir con un`} <b>{` ${Math.round((1-Math.pow(1/2,aciertos))*100*100)/100 }% de seguridad `}</b>{`que usted puede diferenciar las imagenes`}
             </p>
         )
     }else{
